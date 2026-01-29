@@ -4,38 +4,42 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>AurIQ | Multi-Platform Voice AI for Bharat</title>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Replace Space Grotesk link with Inter -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- Keep Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+
 <script id="tailwind-config">
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#0056D2",
-                        "navy-deep": "#0F172A",
-                        "background-base": "#FFFFFF",
-                        "glass-white": "rgba(255, 255, 255, 0.7)",
-                        "accent-saffron": "#E67E22",
-                        "accent-teal": "#2D9DA1"
-                    },
-                    fontFamily: {
-                        "display": ["Space Grotesk", "sans-serif"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "0.5rem",
-                        "lg": "1rem",
-                        "xl": "1.5rem",
-                        "2xl": "2rem",
-                        "3xl": "2.5rem",
-                        "full": "9999px"
-                    },
-                },
-            },
-        }
-    </script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#0056D2",
+          "navy-deep": "#0F172A",
+          "background-base": "#FFFFFF",
+          "glass-white": "rgba(255, 255, 255, 0.7)",
+          "accent-saffron": "#E67E22",
+          "accent-teal": "#2D9DA1"
+        },
+        fontFamily: {
+          "display": ["Inter", "sans-serif"]  // Changed from Space Grotesk
+        },
+        borderRadius: {
+          "DEFAULT": "0.5rem",
+          "lg": "1rem",
+          "xl": "1.5rem",
+          "2xl": "2rem",
+          "3xl": "2.5rem",
+          "full": "9999px"
+        },
+      },
+    },
+  }
+</script>
+
 <style type="text/tailwindcss">
         body {
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Inter', sans-serif;
             scroll-behavior: smooth;
         }
         .liquid-gradient {
@@ -127,6 +131,7 @@
 
     </style>
 </head>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
 <body class="bg-background-base text-navy-deep overflow-x-hidden">
 <nav class="fixed top-0 w-full z-50 border-b border-blue-100/50 nav-blur">
   <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
